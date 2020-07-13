@@ -1,0 +1,4 @@
+<!--components/SearchInput/SearchInput.wxml-->
+<view class="seart-input">
+  <navigator url="../../pages/search/index" open-type="navigate"> 搜 索</navigator>
+</view>

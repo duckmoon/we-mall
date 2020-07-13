@@ -1,0 +1,16 @@
+/* components/SearchInput/SearchInput.wxss */
+.seart-input {
+  height: 90rpx;
+  background-color: #d81e06;
+  padding: 10rpx;
+}
+.seart-input navigator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-radius: 4px;
+  background-color:white;
+  font-size: 14px;
+  
+}

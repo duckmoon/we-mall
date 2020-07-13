@@ -1,0 +1,56 @@
+/* pages/category/index.wxss */
+
+page {
+  height: 100%;
+}
+
+.cates-container {
+  display: flex;
+  height: calc(100vh - 90rpx);
+}
+
+.left-menu {
+  flex: 2;
+  
+}
+.menu-title {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+
+.right-products {
+  flex: 5;
+}
+
+.product-list {
+  /* height: 100%; */
+}
+.product-list .product-title {
+  justify-content: center;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+}
+.product-list .divider {
+  color: #ccc;
+  padding: 0 10rpx;
+}
+.product-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-content navigator {
+  width: 33.33%;
+  text-align: center;
+}
+.product-item image {
+  width: 50%;
+}
+
+.active {
+  color: var(--themeColor);
+  border-left: 5rpx solid currentColor;
+}
