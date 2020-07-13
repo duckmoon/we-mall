@@ -1,0 +1,5 @@
+<!--pages/good_list/index.wxml-->
+<view>
+  <SearchInput/>
+  <Tab tabs="{{tabs}}" bind:onTabItemChanged="tabItemChanged"></Tab>
+</view>

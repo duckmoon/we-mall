@@ -5,7 +5,8 @@
     "pages/category/index",
     "pages/cart/index",
     "pages/user/index",
-    "pages/search/index"
+    "pages/search/index",
+    "pages/good_list/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
