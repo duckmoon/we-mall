@@ -1,0 +1,45 @@
+<!--pages/goods_detail/index.wxml-->
+<view class="goods-container">
+  <swiper autoplay="{{autoplay}}" indicator-dots="{{indicatorDots}}" interval="{{interval}}" duration="{{duration}}">
+    <swiper-item wx:for="{{goods.pics}}"
+      wx:key="pics_id" bindtap="priviewImage" data-url="{{item.pics_mid}}">
+      <image mode="widthFix" src="{{item.pics_mid}}"/>
+    </swiper-item>
+  </swiper>
+  <view class="goods-price">{{goods.goods_price}}</view>
+  <view class="goods-info">
+    <text class="goods-name">{{goods.goods_name}}</text>
+    <view class="goods-collection">
+      <image mode="widthFix" src="/icons/collection.png"></image>
+      <text>收藏</text>
+    </view>
+  </view>
+  <view class="goods-introduce">
+    <view class="introduce-title">图文详情</view>
+    <rich-text nodes="{{goods.goods_introduce}}"></rich-text>
+  </view>
+
+
+</view>
+<view class="bottom-bar">
+  <view class="bottom-bar-item">
+    <!-- <view class="icon-item icon-kefu"></view> -->
+    <view>客服</view>
+    <!-- <button open-type="contact"></button> -->
+  </view>
+  <view class="bottom-bar-item">
+    <!-- <view class="icon-item icon-kefu"></view> -->
+    <view>分享</view>
+    <!-- <button open-type="share"></button> -->
+  </view>
+  <navigator class="bottom-bar-item" url="/pages/cart/index" open-type="switchTab">
+    <view class="icon-item icon-kefu"></view>
+    <view>购物车</view>
+  </navigator>
+  <view class="bottom-bar-cart" bindtap="addGoods">
+    加入购物车
+  </view>
+  <view class="bottom-bar-buy">
+    立即购买
+  </view>
+</view>

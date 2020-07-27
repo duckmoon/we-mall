@@ -1,1 +1,26 @@
 /* pages/good_list/index.wxss */
+.product-item {
+  display: flex;
+}
+.image-wrapper {
+  flex: 2;
+}
+.image-wrapper image {
+  width: 70%;
+}
+.info-wrapper {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.info-wrapper .info-title {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.info-price {
+  color: var(--themeColor);
+}

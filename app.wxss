@@ -1,5 +1,5 @@
 /**app.wxss**/
-page, view, navigator, text, swiper, swiper-item {
+page, view, navigator, text, swiper, swiper-item, button {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
